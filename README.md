@@ -30,7 +30,7 @@ If your stored procedure or text SQL querie doesn't have parameters you can just
 and you'll get DataTable as result, or<br/> 
 `Repository.ExecuteAsQuery<Model>("SomeStoredProcedure");`<br/> 
 and you'll get List<Model> where Model you have define as record with all stufs which it contains to map database response<br/>
-public record Model(int id, string name, DateTime date);<br/>
+`public record Model(int id, string name, DateTime date);`<br/>
 You can call<br/> 
 `Repository.ExecuteAsQuery<string>("SomeStoredProcedure");`<br/> 
 or<br/> 
